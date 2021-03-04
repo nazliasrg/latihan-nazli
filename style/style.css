@@ -99,3 +99,22 @@ p{
   background-color: #2e2e2e;
   color: whitesmoke;
 }
+
+@media screen and (max-width:800px){
+  .title {
+    display: none;
+  }
+
+  .sidebar1{
+    display: none;
+  }
+
+  .kolom1{
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .topnav ul li.nama{
+    display: none;
+  }
+}
