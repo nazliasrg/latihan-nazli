@@ -40,6 +40,7 @@ table {
 }
 
 header {
+  
 }
 
 
@@ -57,8 +58,6 @@ ul {
   list-style-type: none;
   padding-right: 30px;
 }
-
-ul li {}
 
 ul li a {
   text-decoration: none;
@@ -109,14 +108,41 @@ ul li a:hover {
   margin: 16px;
 }
 
+.flex-containe2 {
+  display: flex;
+  font-size: 12px;
+  text-align: center;
+  flex-direction: row;
+}
+
 .flex-item {
   background-color: #f0f0f0;
   padding: 15px;
   margin: 10px;
+  text-align: center;
   flex: 50%;
 }
 
 .cookie{
   width: 100%;
   height: 100%;
+}
+
+.judul{
+  text-align: left;
+  font-weight: bold;
+}
+
+.imgUs{
+  width: 30%;
+  height: 30%;
+  float: left;
+}
+
+.paragraf{
+  margin-left: 40px;
+}
+#paragraf2{
+  text-align: justify;
+  
 }
