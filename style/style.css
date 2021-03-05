@@ -12,6 +12,7 @@ h1 {
 .judulCookies{
   color: whitesmoke;
 }
+
 .container {
   text-align: center;
 }
@@ -68,7 +69,6 @@ ul li a:hover {
   background-color: #f0f0f0;
 }
 
-/* When you mouse over the container, fade in the overlay title */
 .col-sm:hover .overlay {
   opacity: 0.5;
 }
