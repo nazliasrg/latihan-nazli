@@ -41,8 +41,48 @@
     
     <img src="assets/backgroundbw.jpg" class="img-fluid cookie" alt="Responsive image">
 
-
   </header>
+  
+  <div class="container1">
+    <div class="gray">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus iusto, laborum tempora quo, id dolor minima est ut deserunt ipsam quae a eum? Consequatur ea commodi adipisci eum, fugiat autem ducimus. Ratione sint mollitia magni quasi accusantium ipsum cumque necessitatibus veniam veritatis asperiores, totam quas hic quis laboriosam possimus in.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint est neque ratione inventore? Debitis explicabo excepturi distinctio dolor veniam voluptates cupiditate. Nemo inventore cupiditate consectetur eligendi repellat consequuntur perferendis, unde, repudiandae eum facere reiciendis quas repellendus, recusandae quae ad ut numquam ea aliquid voluptatibus. Nihil molestias unde laborum saepe, magni doloribus amet reprehenderit nisi temporibus pariatur, beatae eum quam veniam.</p>
+      <div class="row">
+        <div class="col-sm buttonStory">
+          <button type="button" class="btn btn-outline-dark">Full Story &#8594;</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="story">
+      <img src="assets/story1.jpg" alt="story image" class="storyImage">
+      <img src="assets/storyAbu2.jpg" alt="background abu-abu" class="storyGray">
+    </div>
+
+  </div>
+
+  <div class="container2">
+    <div class="mySlides">
+      <img src="assets/cookies1.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="assets/cookies2.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <img src="assets/cookies3.jpg" style="width:100%">
+    </div>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+  </div>
 
   <div class="flex-container">
     <div id="catalog" class="flex-item">
@@ -156,9 +196,6 @@
   </footer>
 
   <script>
-
-    window.onscroll = function() {scrollFunction()};
-
     function openNav() {
       document.getElementById("myNav").style.width = "100%";
     }
@@ -167,13 +204,42 @@
       document.getElementById("myNav").style.width = "0%";
     }
 
+    window.onscroll = function() {scrollFunction()};
+
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("navbar2").style.backgroundColor = "#f0f0f0";
       }
       else{
-        document.getElementById("navbar2").style.backgroundColor = "#f5f5f5";
+        document.getElementById("navbar2").style.backgroundColor = "#ffffff";
       }
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
     }
     </script>
 
