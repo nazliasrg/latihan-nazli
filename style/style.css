@@ -17,6 +17,10 @@ header{
   background-color: white;
 }
 
+a{
+  text-decoration: none;
+}
+
 .nav-container{
   background-color: white;
   padding: 8px 20px;
@@ -337,6 +341,31 @@ p{
   text-indent: 30px;
   text-align: justify;
   line-height:16px;
+}
+
+.contact{
+  background-image: url(../assets/geometry.png);
+  height: 250px;
+  width: auto;
+}
+
+.cookiesFooter{
+  width: 25%;
+  margin: 80px auto;
+  opacity: 0.7;
+}
+
+.footerLink{
+  opacity: 0.7;
+  font-family: Calibri;
+  font-size: 18px;
+  text-align: left;
+  color: black;
+  margin-top: 50px;
+}
+
+.footerLink a{
+  color:black;
 }
 
 .footer{
