@@ -404,6 +404,11 @@ p{
   margin-top:-5%;
 }
 
+.imageStory{
+  width: 400px;
+  margin-left: 100px;
+}
+
 @media screen and (max-width:800px){
   .title {
     display: none;
