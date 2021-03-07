@@ -108,7 +108,7 @@ header{
 
 .container1{
   background-color: #f0f0f0;
-  margin: 50px 110px;
+  margin: 100px 110px;
   padding: 30px;
   box-sizing: border-box;
   display: flex;
@@ -144,7 +144,34 @@ header{
 }
 
 .container2{
-  margin : 50px 100px;
+  margin : 80px 100px;
+}
+
+.card{
+  border: none;
+  margin-left:8%;
+  margin-right: 8%;
+}
+
+.container-flex{
+  display: flex;
+  font-size: 12px;
+  text-align: center;
+  flex-direction: row;
+  align-content: space-between;
+  margin: 16px;
+  align-items: stretch;
+}
+
+.imageSlide{
+  width: 20%;
+  height: auto;
+}
+
+.imgMenu{
+  padding: 20px;
+  height: 80%;
+  width: 100%;
 }
 
 .dot {
@@ -161,9 +188,6 @@ header{
 .active, .dot:hover {
   background-color: #717171;
 }
-
-
-
 
 .container {
   text-align: center;
@@ -202,7 +226,7 @@ ul li a:hover {
 
 .text{
   text-align: center;
-  margin : 60px auto;
+  margin : 90px auto;
 }
 
 .overlay {
@@ -215,14 +239,14 @@ ul li a:hover {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   color: black;
-  font-size: 18px;
+  font-size: 24px;
   height: 100%;
   width: 100%;
   background-color: #f0f0f0;
 }
 
 .col-sm:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .flex-container {
@@ -230,13 +254,13 @@ ul li a:hover {
   font-size: 30px;
   text-align: center;
   flex-direction: column;
-  margin: 16px;
+  margin: 50px auto;
 }
 
 .flex-item {
   background-color: #f0f0f0;
   padding: 15px;
-  margin: 10px;
+  margin: 30px auto;
   text-align: center;
   flex: 0 ;
   height: 100vh;
@@ -245,6 +269,40 @@ ul li a:hover {
 .judul{
   text-align: left;
   font-weight: bold;
+}
+
+.container4{
+  margin: 0px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.galleryAbu{
+  margin-top: 20%;
+}
+
+.galleryAbu .imgAbu{
+  z-index: 1;
+  width: 100%;
+  height: auto;
+}
+
+.galleryQuotes{
+  padding: 16px;
+  text-align: justify;
+  background-color: #ffddcc;
+  width: 300px;
+  z-index: 2;
+  margin-left: 60%; 
+  margin-top: -100px;
+}
+
+.galleryCafe .imgCafe{
+  margin-left: 20%;
+  z-index: 2;
+  width: 50%;
+  height: auto;
+  margin-top: -30%;
 }
 
 .container-satu{
@@ -279,8 +337,10 @@ p{
 }
 
 .footer{
-  background-color: #2e2e2e;
-  color: whitesmoke;
+  height: 30px;
+  font-size: 12px;
+  background-color: #e7e3e3;
+  color: rgb(83, 81, 81);
 }
 
 @media screen and (max-width:800px){
