@@ -110,6 +110,14 @@ a{
   margin-top:-5%;
 }
 
+.locationJudul{
+  font-family: "M PLUS Rounded 1c",sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+}
+
 .container1{
   background-color: #f0f0f0;
   margin: 60px 110px;
@@ -375,13 +383,7 @@ p{
   color: rgb(83, 81, 81);
 }
 
-.locationJudul{
-  font-family: "M PLUS Rounded 1c",sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 60px;
-}
+
 
 .gray2{
   flex:1;
